@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
+  <script src="sweetalert-master/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<style>
+input {
+    position: absolute;
+}
+
+input#upbtn {
+    float: none;
+    position: absolute;
+    top: 10%; left: 40%;
+    nav-index: 1;
+    nav-right: #b2; nav-left: #b4;
+    nav-down: #b2; nav-up: #b4;
+}
+
+input#rightbtn {
+    float: right;
+    position: absolute;
+    top: 40%; left: 70%;
+    nav-index: 2;
+    nav-right: #b3; nav-left: #b1;
+    nav-down: #b3; nav-up: #b1;
+}
+
+input#downbtn {
+    float: none;
+    position: absolute;
+    top: 70%; left: 40%;
+    nav-index: 3;
+    nav-right: #b4; nav-left: #b2;
+    nav-down: #b4; nav-up: #b2;
+}
+
+input#leftbtn {
+    float: left;
+    top: 40%; left: 10%;
+    nav-index: 4;
+    nav-right: #b1; nav-left: #b3;
+    nav-down: #b1; nav-up: #b3;
+
+}
+</style>
+</head>
+
+<body>
+
+<input id="upbtn" type="image" src="images/up.svg" width="60" height="60"/>
+<input id="rightbtn" type="image" src="images/right.svg" width="60" height="60"/>
+<input id="downbtn" type="image" src="images/down.svg" width="60" height="60"/>
+<input id="leftbtn" type="image" src="images/left.svg" width="60" height="60"/>
+
+<script>
+$("#upbtn").click(function() {
+    swal({
+      title: "Tilt Up",
+      text: "Player has 3 seconds to play",
+      showConfirmButton:false,
+      timer: 3000
+    });
+});
+$("#rightbtn").click(function() {
+  swal({
+    title: "Tilt right",
+    text: "Player has 3 seconds to play",
+    showConfirmButton:false,
+    timer: 3000
+  });
+});
+$("#downbtn").click(function() {
+  swal({
+    title: "Tilt down",
+    text: "Player has 3 seconds to play",
+    showConfirmButton:false,
+    timer: 3000
+  });
+});
+
+$("#leftbtn").click(function() {
+  swal({
+    title: "Tilt left",
+    text: "Player has 3 seconds to play",
+    showConfirmButton:false,
+    timer: 3000
+  });
+});
+</script>
+
+</body>
+</html>

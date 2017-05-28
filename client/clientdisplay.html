@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
+  <script src="sweetalert-master/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+<button id="upbtn">Click</button>
+<script>
+$("#upbtn").click(function(){
+    swal({
+      title: "Tilt Up",
+      text: "Player has 3 seconds to play",
+      showConfirmButton:false,
+      timer: 3000
+    });
+});
+</script>
+</body>
+</html>
